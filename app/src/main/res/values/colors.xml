@@ -11,4 +11,7 @@
     <color name="start_surface_color">#34393E</color>
     <color name="end_surface_color">#181A1D</color>
 
+    <color name="tint_icon">@color/gray_700</color>
+
+    <color name="gray_700">#757575</color>
 </resources>
