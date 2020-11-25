@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    compileSdkVersion build.compileSdk
+    buildToolsVersion build.buildTools
 
     defaultConfig {
         applicationId "app.harmony"
-        minSdkVersion 21
-        targetSdkVersion 30
+        minSdkVersion build.minSdk
+        targetSdkVersion build.targetSdk
         versionCode 1
         versionName "1.0"
 
@@ -34,12 +34,12 @@ android {
 
 dependencies {
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.3.2'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.google.android.material:material:1.2.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$library.kotlin"
+    implementation "androidx.core:core-ktx:$library.coreKtx"
+    implementation "androidx.appcompat:appcompat:$library.appcompat"
+    implementation "com.google.android.material:material:$library.material"
+    implementation "androidx.constraintlayout:constraintlayout:$library.constraintLayout"
+    testImplementation "junit:junit:$library.jUnit"
+    androidTestImplementation "androidx.test.ext:junit:$library.testExt"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$library.espresso"
 }
