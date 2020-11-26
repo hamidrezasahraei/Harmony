@@ -1,0 +1,19 @@
+ext {
+    build = [
+            compileSdk: 30,
+            buildTools: '30.0.2',
+            minSdk    : 21,
+            targetSdk : 30
+    ]
+
+    library = [
+            kotlin: '1.4.10',
+            coreKtx: '1.3.2',
+            appcompat: '1.2.0',
+            material: '1.2.1',
+            constraintLayout: '2.0.4',
+            jUnit: '4.12',
+            testExt: '1.1.2',
+            espresso: '3.3.0'
+    ]
+}
