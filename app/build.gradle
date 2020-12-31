@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -39,7 +40,14 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$library.appcompat"
     implementation "com.google.android.material:material:$library.material"
     implementation "androidx.constraintlayout:constraintlayout:$library.constraintLayout"
+
+    implementation "com.google.dagger:hilt-android:$library.hilt"
+    kapt "com.google.dagger:hilt-android-compiler:$library.hilt"
+
     testImplementation "junit:junit:$library.jUnit"
     androidTestImplementation "androidx.test.ext:junit:$library.testExt"
     androidTestImplementation "androidx.test.espresso:espresso-core:$library.espresso"
+
+    implementation project(":common:musics")
+    implementation project(":common:neumorphism")
 }
