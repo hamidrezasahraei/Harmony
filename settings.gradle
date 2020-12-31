@@ -1,2 +1,4 @@
+include ':common'
+include ':library'
 include ':app'
 rootProject.name = "Harmony"
