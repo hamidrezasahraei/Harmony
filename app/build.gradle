@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -12,8 +13,8 @@ android {
         applicationId "app.harmony"
         minSdkVersion build.minSdk
         targetSdkVersion build.targetSdk
-        versionCode 1
-        versionName "1.0"
+        versionCode app.versionCode
+        versionName app.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

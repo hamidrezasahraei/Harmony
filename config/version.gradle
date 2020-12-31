@@ -6,6 +6,11 @@ ext {
             targetSdk : 30
     ]
 
+    app = [
+            versionCode: 1,
+            versionName: "0.0.1-alpha"
+    ]
+
     library = [
             kotlin: '1.4.10',
             coreKtx: '1.3.2',
