@@ -36,7 +36,6 @@ android {
 
 dependencies {
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$library.kotlin"
     implementation "androidx.core:core-ktx:$library.coreKtx"
     implementation "androidx.appcompat:appcompat:$library.appcompat"
     implementation "com.google.android.material:material:$library.material"
